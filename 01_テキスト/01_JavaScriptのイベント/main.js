@@ -1,0 +1,18 @@
+const button = document.getElmentById("button")
+
+const alertMessage = function () {
+  alert("クリックしたね")
+}
+alertMessage()
+
+button.onclick = alertMessage
+
+const inputText = document.getElementById("input-text")
+const inputDate = document.getElementById("input-date")
+
+const logValue = function (e) {
+  console.log(e.target.value)
+}
+
+inputText.oninput = logValue
+inputDate.oninput = logValue
